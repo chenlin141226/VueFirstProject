@@ -13,6 +13,7 @@ Vue.use(Router)
 //export default Router 是把路由对象暴露出去
 export default new Router({
   routes: [    //配置路由规则
+   {path:'/',redirect:'/home'},
    {path:'/home',component:HomeContainer},
    {path:'/rember',component:MemberContainer},
    {path:'/shopcar',component:SearchContainer},

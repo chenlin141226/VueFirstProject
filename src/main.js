@@ -14,12 +14,21 @@ Vue.component(Header.name, Header)
 Vue.component(Swipe.name,Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
 
+
 import 'mint-ui/lib/style.css'
 
 //引入底部tab的样式
 import './lib/mui-master/dist/css/mui.min.css'
 import './lib/mui-master/examples/hello-mui/css/icons-extra.css'
 import './lib/mui-master/examples/hello-mui/fonts/mui-icons-extra.ttf'
+
+import axios from 'axios'
+import {post,fetch,patch,put} from './api/http'
+//定义全局变量
+Vue.prototype.$post=post;
+Vue.prototype.$fetch=fetch;
+Vue.prototype.$patch=patch;
+Vue.prototype.$put=put;
 
 Vue.config.productionTip = false
 
