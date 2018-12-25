@@ -19,9 +19,11 @@ Vue.component(Button.name, Button);
 import 'mint-ui/lib/style.css'
 
 //引入底部tab的样式
-import './lib/mui-master/dist/css/mui.min.css'
-import './lib/mui-master/examples/hello-mui/css/icons-extra.css'
-import './lib/mui-master/examples/hello-mui/fonts/mui-icons-extra.ttf'
+// 导入 MUI 的样式
+import './lib/mui/css/mui.min.css'
+// 导入扩展图标样式
+import './lib/mui/css/icons-extra.css'
+import './lib/mui/fonts/mui-icons-extra.ttf'
 
 
 //axios 网络请求
